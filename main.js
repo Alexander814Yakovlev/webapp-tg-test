@@ -1,4 +1,4 @@
-const v = 0.12
+const v = 0.121
 
 let version = document.querySelector(".version")
 version.textContent = `VER: ${v}`
@@ -12,7 +12,6 @@ let sendButton = document.querySelector(".button");
 if (tg.initDataUnsafe.user.id === 307971589) {
     myConsole.value = 'Wake up! Neo'
     sendButton.addEventListener('click', () => {
-        tg.showPopUp("message has been sent")
         tg.sendData(JSON.stringify({ result: 'ok', data: myConsole.value }))
     })
 } else {
