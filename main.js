@@ -1,4 +1,4 @@
-const v = 0.1
+const v = 0.11
 
 let version = document.querySelector(".version")
 version.textContent = `VER: ${v}`
